@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : bitonic_sort
+Version: P-2019.03-SP1-1
+Date   : Mon Dec 29 09:54:06 2025
+****************************************
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ff1p98vm40c (File: /usr/cad/CBDK018_UMC_Faraday_v1.1/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db)
+
+Number of ports:                         4145
+Number of nets:                          7319
+Number of cells:                         3350
+Number of combinational cells:           2534
+Number of sequential cells:               768
+Number of macros/black boxes:               0
+Number of buf/inv:                        854
+Number of references:                       7
+
+Combinational area:              36785.145843
+Buf/Inv area:                     7387.027183
+Noncombinational area:           40797.389648
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 77582.535491
+Total area:                 undefined
+1

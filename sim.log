@@ -1,0 +1,188 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS Rocky Linux release 7.10 (Green Obsidian)' is not 
+  supported on 'x86_64' officially, assuming linux compatibility by default. 
+  Set VCS_ARCH_OVERRIDE to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+Command: vcs -R -full64 bitonic_sort_tb.v bitonic_sort.v bitonic_block.v bitonic_node.v \
+CAS.v -debug_access+all +v2k -sverilog -l sim.log
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Mon Dec 29 09:53:44 2025
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'bitonic_sort_tb.v'
+Parsing design file 'bitonic_sort.v'
+Parsing design file 'bitonic_block.v'
+Parsing design file 'bitonic_node.v'
+Parsing design file 'CAS.v'
+Top Level Modules:
+       bitonic_sort_tb
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+
+3 modules and 0 UDP read.
+recompiling module bitonic_sort_tb
+recompiling module bitonic_block
+recompiling module bitonic_node
+All of 3 modules done
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic --no-relax  -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o \
+
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _3951170_archive_1.so _prev_archive_1.so \
+_cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o \
+/usr/cad/synopsys/verdi/2022.06//share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread \
+-ldl 
+../simv up to date
+Command: /home/lab716/Desktop/Z/./simv +v2k -a sim.log
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Dec 29 09:53 2025
+*Verdi* Loading libsscore_vcs202206.so
+FSDB Dumper for VCS, Release Verdi_T-2022.06, Linux x86_64/64bit, 05/29/2022
+(C) 1996 - 2022 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'bitonic_sort.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+========================================
+Bitonic Sort Gate-Level Simulation
+========================================
+Starting Output Verification (Latency: 6)...
+
+Checking Set 0:
+  [0] Got: 21c0, Exp: 21c0 <- CORRECT
+  [1] Got: 2769, Exp: 2769 <- CORRECT
+  [2] Got: 3813, Exp: 3813 <- CORRECT
+  [3] Got: 4926, Exp: 4926 <- CORRECT
+  [4] Got: 4fd1, Exp: 4fd1 <- CORRECT
+  [5] Got: 5ff7, Exp: 5ff7 <- CORRECT
+  [6] Got: 9a21, Exp: 9a21 <- CORRECT
+  [7] Got: b6bf, Exp: b6bf <- CORRECT
+
+Checking Set 1:
+  [0] Got: 29e6, Exp: 29e6 <- CORRECT
+  [1] Got: 5fc0, Exp: 5fc0 <- CORRECT
+  [2] Got: 78db, Exp: 78db <- CORRECT
+  [3] Got: 7d64, Exp: 7d64 <- CORRECT
+  [4] Got: 9eee, Exp: 9eee <- CORRECT
+  [5] Got: 9fd3, Exp: 9fd3 <- CORRECT
+  [6] Got: c31e, Exp: c31e <- CORRECT
+  [7] Got: e795, Exp: e795 <- CORRECT
+
+Checking Set 2:
+  [0] Got: 02e4, Exp: 02e4 <- CORRECT
+  [1] Got: 131f, Exp: 131f <- CORRECT
+  [2] Got: 62dc, Exp: 62dc <- CORRECT
+  [3] Got: 7cae, Exp: 7cae <- CORRECT
+  [4] Got: 9008, Exp: 9008 <- CORRECT
+  [5] Got: 9d0e, Exp: 9d0e <- CORRECT
+  [6] Got: cc63, Exp: cc63 <- CORRECT
+  [7] Got: ebc5, Exp: ebc5 <- CORRECT
+
+Checking Set 3:
+  [0] Got: 19ce, Exp: 19ce <- CORRECT
+  [1] Got: 2fb5, Exp: 2fb5 <- CORRECT
+  [2] Got: 5d7d, Exp: 5d7d <- CORRECT
+  [3] Got: 88f4, Exp: 88f4 <- CORRECT
+  [4] Got: 9f3e, Exp: 9f3e <- CORRECT
+  [5] Got: a88a, Exp: a88a <- CORRECT
+  [6] Got: b86c, Exp: b86c <- CORRECT
+  [7] Got: c7e9, Exp: c7e9 <- CORRECT
+
+Checking Set 4:
+  [0] Got: 1bd4, Exp: 1bd4 <- CORRECT
+  [1] Got: 3e49, Exp: 3e49 <- CORRECT
+  [2] Got: a078, Exp: a078 <- CORRECT
+  [3] Got: a1b6, Exp: a1b6 <- CORRECT
+  [4] Got: c848, Exp: c848 <- CORRECT
+  [5] Got: d355, Exp: d355 <- CORRECT
+  [6] Got: e13e, Exp: e13e <- CORRECT
+  [7] Got: e705, Exp: e705 <- CORRECT
+
+Checking Set 5:
+  [0] Got: 1e99, Exp: 1e99 <- CORRECT
+  [1] Got: 324c, Exp: 324c <- CORRECT
+  [2] Got: 77ca, Exp: 77ca <- CORRECT
+  [3] Got: 7c62, Exp: 7c62 <- CORRECT
+  [4] Got: 7f91, Exp: 7f91 <- CORRECT
+  [5] Got: c07d, Exp: c07d <- CORRECT
+  [6] Got: de70, Exp: de70 <- CORRECT
+  [7] Got: fec3, Exp: fec3 <- CORRECT
+
+Checking Set 6:
+  [0] Got: 6402, Exp: 6402 <- CORRECT
+  [1] Got: 6736, Exp: 6736 <- CORRECT
+  [2] Got: 6fb5, Exp: 6fb5 <- CORRECT
+  [3] Got: 8875, Exp: 8875 <- CORRECT
+  [4] Got: da61, Exp: da61 <- CORRECT
+  [5] Got: dc8d, Exp: dc8d <- CORRECT
+  [6] Got: eed8, Exp: eed8 <- CORRECT
+  [7] Got: ffec, Exp: ffec <- CORRECT
+
+Checking Set 7:
+  [0] Got: 2879, Exp: 2879 <- CORRECT
+  [1] Got: 2961, Exp: 2961 <- CORRECT
+  [2] Got: 2b70, Exp: 2b70 <- CORRECT
+  [3] Got: 303e, Exp: 303e <- CORRECT
+  [4] Got: 3420, Exp: 3420 <- CORRECT
+  [5] Got: 3d39, Exp: 3d39 <- CORRECT
+  [6] Got: 6b88, Exp: 6b88 <- CORRECT
+  [7] Got: c3a2, Exp: c3a2 <- CORRECT
+
+Checking Set 8:
+  [0] Got: 0639, Exp: 0639 <- CORRECT
+  [1] Got: 0a68, Exp: 0a68 <- CORRECT
+  [2] Got: 0b73, Exp: 0b73 <- CORRECT
+  [3] Got: 7394, Exp: 7394 <- CORRECT
+  [4] Got: 962c, Exp: 962c <- CORRECT
+  [5] Got: ba84, Exp: ba84 <- CORRECT
+  [6] Got: dedd, Exp: dedd <- CORRECT
+  [7] Got: e3bd, Exp: e3bd <- CORRECT
+
+Checking Set 9:
+  [0] Got: 2757, Exp: 2757 <- CORRECT
+  [1] Got: 35e8, Exp: 35e8 <- CORRECT
+  [2] Got: 38e6, Exp: 38e6 <- CORRECT
+  [3] Got: 4866, Exp: 4866 <- CORRECT
+  [4] Got: 8ba6, Exp: 8ba6 <- CORRECT
+  [5] Got: 902c, Exp: 902c <- CORRECT
+  [6] Got: a38f, Exp: a38f <- CORRECT
+  [7] Got: ea9b, Exp: ea9b <- CORRECT
+========================================
+Errors Found: 0
+*** TEST PASSED *** :)
+========================================
+$finish called from file "bitonic_sort_tb.v", line 124.
+$finish at simulation time               250000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 250000 ps
+CPU Time:      0.150 seconds;       Data structure size:   0.1Mb
+Mon Dec 29 09:53:46 2025
+CPU time: .253 seconds to compile + .181 seconds to elab + .176 seconds to link + .178 seconds in simulation

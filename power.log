@@ -1,0 +1,129 @@
+Loading db file '/usr/cad/CBDK018_UMC_Faraday_v1.1/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : bitonic_sort
+Version: P-2019.03-SP1-1
+Date   : Mon Dec 29 09:54:07 2025
+****************************************
+
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ff1p98vm40c (File: /usr/cad/CBDK018_UMC_Faraday_v1.1/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db)
+
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+bitonic_sort           G1000K            fsa0m_a_generic_core_ss1p62v125c
+bitonic_block_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_1
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_block_DATA_WIDTH16_ORDER0_POLARITY1_SIGNED0_PIPE_REG1_1
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_block_DATA_WIDTH16_ORDER1_POLARITY0_SIGNED0_PIPE_REG1
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_block_DATA_WIDTH16_ORDER1_POLARITY1_SIGNED0_PIPE_REG1
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_block_DATA_WIDTH16_ORDER2_POLARITY0_SIGNED0_PIPE_REG1
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX1_1
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_node_DATA_WIDTH16_ORDER0_POLARITY1_SIGNED0_PIPE_REG1_INDEX1_1
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_node_DATA_WIDTH16_ORDER1_POLARITY0_SIGNED0_PIPE_REG1_INDEX2
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX3_1
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_node_DATA_WIDTH16_ORDER1_POLARITY1_SIGNED0_PIPE_REG1_INDEX2
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_node_DATA_WIDTH16_ORDER0_POLARITY1_SIGNED0_PIPE_REG1_INDEX3_1
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_node_DATA_WIDTH16_ORDER2_POLARITY0_SIGNED0_PIPE_REG1_INDEX4
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_node_DATA_WIDTH16_ORDER1_POLARITY0_SIGNED0_PIPE_REG1_INDEX5_1
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX6_3
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_0_0_00000001_17 enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_1_0_00000001_5  enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_block_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_0
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_block_DATA_WIDTH16_ORDER0_POLARITY1_SIGNED0_PIPE_REG1_0
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX1_0
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_node_DATA_WIDTH16_ORDER0_POLARITY1_SIGNED0_PIPE_REG1_INDEX1_0
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX3_0
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_node_DATA_WIDTH16_ORDER0_POLARITY1_SIGNED0_PIPE_REG1_INDEX3_0
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_node_DATA_WIDTH16_ORDER1_POLARITY0_SIGNED0_PIPE_REG1_INDEX5_0
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX6_0
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX6_1
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX6_2
+                       enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_0_0_00000001_0  enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_0_0_00000001_1  enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_0_0_00000001_2  enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_0_0_00000001_3  enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_0_0_00000001_4  enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_0_0_00000001_5  enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_0_0_00000001_6  enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_0_0_00000001_7  enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_0_0_00000001_8  enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_0_0_00000001_9  enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_0_0_00000001_10 enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_0_0_00000001_11 enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_0_0_00000001_12 enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_0_0_00000001_13 enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_0_0_00000001_14 enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_0_0_00000001_15 enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_0_0_00000001_16 enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_1_0_00000001_0  enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_1_0_00000001_1  enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_1_0_00000001_2  enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_1_0_00000001_3  enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+CAS_16_1_0_00000001_4  enG5K             fsa0m_a_t33_generic_io_ff1p98vm40c
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   4.3329 mW   (41%)
+  Net Switching Power  =   6.1844 mW   (59%)
+                         ---------
+Total Dynamic Power    =  10.5173 mW  (100%)
+
+Cell Leakage Power     = 141.3382 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           3.6630            0.4414        8.1635e+04            4.1045  (  39.03%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.6699            5.7430        5.9703e+04            6.4129  (  60.97%)
+--------------------------------------------------------------------------------------------------
+Total              4.3329 mW         6.1844 mW     1.4134e+05 pW        10.5174 mW
+1

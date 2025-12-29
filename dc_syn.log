@@ -1,0 +1,380 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version P-2019.03-SP1-1 for linux64 - May 06, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/lab716/.synopsys_dv_prefs.tcl
+source /home/lab716/Desktop/Z/synopsys_dc.setup
+Information: Variable 'hdlin_translate_off_skip_text' is obsolete and is being ignored. (INFO-100)
+Information: Variable 'hdlin_enable_presto_for_vhdl' is obsolete and is being ignored. (INFO-100)
+Information: Variable 'hdlin_enable_presto_for_vhdl' is obsolete and is being ignored. (INFO-100)
+1
+#Read All Files
+# read_verilog bitonic_sort.v
+analyze -format verilog {bitonic_block.v bitonic_sort.v bitonic_node.v CAS.v}
+Running PRESTO HDLC
+Compiling source file ./bitonic_block.v
+Compiling source file ./bitonic_sort.v
+Compiling source file ./bitonic_node.v
+Compiling source file ./CAS.v
+Warning:  ./CAS.v:30: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./CAS.v:30: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./CAS.v:36: A unnamed generate block with an LRM-defined name 'genblk2' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./CAS.v:36: A unnamed generate block with an LRM-defined name 'genblk2' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./CAS.v:47: A unnamed generate block with an LRM-defined name 'genblk3' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./CAS.v:47: A unnamed generate block with an LRM-defined name 'genblk3' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Presto compilation completed successfully.
+Loading db file '/usr/cad/CBDK018_UMC_Faraday_v1.1/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ff1p98vm40c.db'
+Loading db file '/usr/cad/CBDK018_UMC_Faraday_v1.1/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db'
+Loading db file '/usr/cad/CBDK018_UMC_Faraday_v1.1/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db'
+Loading db file '/usr/cad/CBDK018_UMC_Faraday_v1.1/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/usr/cad/synopsys/synthesis/2019.03-sp1-1/libraries/syn/dw_foundation.sldb'
+1
+elaborate bitonic_sort
+Loading db file '/usr/cad/synopsys/synthesis/2019.03-sp1-1/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/2019.03-sp1-1/libraries/syn/standard.sldb'
+  Loading link library 'fsa0m_a_t33_generic_io_ff1p98vm40c'
+  Loading link library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading link library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading link library 'fsa0m_a_generic_core_ss1p62v125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (bitonic_sort)
+Elaborated 1 design.
+Current design is now 'bitonic_sort'.
+Information: Building the design 'bitonic_block' instantiated from design 'bitonic_sort' with
+	the parameters "DATA_WIDTH=16,ORDER=0,POLARITY=0,SIGNED=0,PIPE_REG=1". (HDL-193)
+Presto compilation completed successfully. (bitonic_block_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1)
+Information: Building the design 'bitonic_block' instantiated from design 'bitonic_sort' with
+	the parameters "DATA_WIDTH=16,ORDER=0,POLARITY=1,SIGNED=0,PIPE_REG=1". (HDL-193)
+Presto compilation completed successfully. (bitonic_block_DATA_WIDTH16_ORDER0_POLARITY1_SIGNED0_PIPE_REG1)
+Information: Building the design 'bitonic_block' instantiated from design 'bitonic_sort' with
+	the parameters "DATA_WIDTH=16,ORDER=1,POLARITY=0,SIGNED=0,PIPE_REG=1". (HDL-193)
+Presto compilation completed successfully. (bitonic_block_DATA_WIDTH16_ORDER1_POLARITY0_SIGNED0_PIPE_REG1)
+Information: Building the design 'bitonic_block' instantiated from design 'bitonic_sort' with
+	the parameters "DATA_WIDTH=16,ORDER=1,POLARITY=1,SIGNED=0,PIPE_REG=1". (HDL-193)
+Presto compilation completed successfully. (bitonic_block_DATA_WIDTH16_ORDER1_POLARITY1_SIGNED0_PIPE_REG1)
+Information: Building the design 'bitonic_block' instantiated from design 'bitonic_sort' with
+	the parameters "DATA_WIDTH=16,ORDER=2,POLARITY=0,SIGNED=0,PIPE_REG=1". (HDL-193)
+Presto compilation completed successfully. (bitonic_block_DATA_WIDTH16_ORDER2_POLARITY0_SIGNED0_PIPE_REG1)
+Information: Building the design 'bitonic_node' instantiated from design 'bitonic_block_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1' with
+	the parameters "DATA_WIDTH=16,ORDER=0,POLARITY=0,SIGNED=0,PIPE_REG=1,INDEX=1". (HDL-193)
+Presto compilation completed successfully. (bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX1)
+Information: Building the design 'bitonic_node' instantiated from design 'bitonic_block_DATA_WIDTH16_ORDER0_POLARITY1_SIGNED0_PIPE_REG1' with
+	the parameters "DATA_WIDTH=16,ORDER=0,POLARITY=1,SIGNED=0,PIPE_REG=1,INDEX=1". (HDL-193)
+Presto compilation completed successfully. (bitonic_node_DATA_WIDTH16_ORDER0_POLARITY1_SIGNED0_PIPE_REG1_INDEX1)
+Information: Building the design 'bitonic_node' instantiated from design 'bitonic_block_DATA_WIDTH16_ORDER1_POLARITY0_SIGNED0_PIPE_REG1' with
+	the parameters "DATA_WIDTH=16,ORDER=1,POLARITY=0,SIGNED=0,PIPE_REG=1,INDEX=2". (HDL-193)
+Presto compilation completed successfully. (bitonic_node_DATA_WIDTH16_ORDER1_POLARITY0_SIGNED0_PIPE_REG1_INDEX2)
+Information: Building the design 'bitonic_node' instantiated from design 'bitonic_block_DATA_WIDTH16_ORDER1_POLARITY0_SIGNED0_PIPE_REG1' with
+	the parameters "DATA_WIDTH=16,ORDER=0,POLARITY=0,SIGNED=0,PIPE_REG=1,INDEX=3". (HDL-193)
+Presto compilation completed successfully. (bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX3)
+Information: Building the design 'bitonic_node' instantiated from design 'bitonic_block_DATA_WIDTH16_ORDER1_POLARITY1_SIGNED0_PIPE_REG1' with
+	the parameters "DATA_WIDTH=16,ORDER=1,POLARITY=1,SIGNED=0,PIPE_REG=1,INDEX=2". (HDL-193)
+Presto compilation completed successfully. (bitonic_node_DATA_WIDTH16_ORDER1_POLARITY1_SIGNED0_PIPE_REG1_INDEX2)
+Information: Building the design 'bitonic_node' instantiated from design 'bitonic_block_DATA_WIDTH16_ORDER1_POLARITY1_SIGNED0_PIPE_REG1' with
+	the parameters "DATA_WIDTH=16,ORDER=0,POLARITY=1,SIGNED=0,PIPE_REG=1,INDEX=3". (HDL-193)
+Presto compilation completed successfully. (bitonic_node_DATA_WIDTH16_ORDER0_POLARITY1_SIGNED0_PIPE_REG1_INDEX3)
+Information: Building the design 'bitonic_node' instantiated from design 'bitonic_block_DATA_WIDTH16_ORDER2_POLARITY0_SIGNED0_PIPE_REG1' with
+	the parameters "DATA_WIDTH=16,ORDER=2,POLARITY=0,SIGNED=0,PIPE_REG=1,INDEX=4". (HDL-193)
+Presto compilation completed successfully. (bitonic_node_DATA_WIDTH16_ORDER2_POLARITY0_SIGNED0_PIPE_REG1_INDEX4)
+Information: Building the design 'bitonic_node' instantiated from design 'bitonic_block_DATA_WIDTH16_ORDER2_POLARITY0_SIGNED0_PIPE_REG1' with
+	the parameters "DATA_WIDTH=16,ORDER=1,POLARITY=0,SIGNED=0,PIPE_REG=1,INDEX=5". (HDL-193)
+Presto compilation completed successfully. (bitonic_node_DATA_WIDTH16_ORDER1_POLARITY0_SIGNED0_PIPE_REG1_INDEX5)
+Information: Building the design 'bitonic_node' instantiated from design 'bitonic_block_DATA_WIDTH16_ORDER2_POLARITY0_SIGNED0_PIPE_REG1' with
+	the parameters "DATA_WIDTH=16,ORDER=0,POLARITY=0,SIGNED=0,PIPE_REG=1,INDEX=6". (HDL-193)
+Presto compilation completed successfully. (bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX6)
+Information: Building the design 'CAS' instantiated from design 'bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX1' with
+	the parameters "DATA_WIDTH=16,POLARITY=0,SIGNED=0,REGOUT_EN=32'h00000001". (HDL-193)
+
+Inferred memory devices in process
+	in routine CAS_16_0_0_00000001 line 48 in file
+		'./CAS.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        H_reg        | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|        L_reg        | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (CAS_16_0_0_00000001)
+Information: Building the design 'CAS' instantiated from design 'bitonic_node_DATA_WIDTH16_ORDER0_POLARITY1_SIGNED0_PIPE_REG1_INDEX1' with
+	the parameters "DATA_WIDTH=16,POLARITY=1,SIGNED=0,REGOUT_EN=32'h00000001". (HDL-193)
+
+Inferred memory devices in process
+	in routine CAS_16_1_0_00000001 line 48 in file
+		'./CAS.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        H_reg        | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|        L_reg        | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (CAS_16_1_0_00000001)
+1
+current_design bitonic_sort
+Current design is 'bitonic_sort'.
+{bitonic_sort}
+link
+
+  Linking design 'bitonic_sort'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (17 designs)              /home/lab716/Desktop/Z/bitonic_sort.db, etc
+  fsa0m_a_t33_generic_io_ff1p98vm40c (library) /usr/cad/CBDK018_UMC_Faraday_v1.1/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ff1p98vm40c.db
+  fsa0m_a_t33_generic_io_ss1p62v125c (library) /usr/cad/CBDK018_UMC_Faraday_v1.1/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db
+  fsa0m_a_generic_core_ff1p98vm40c (library) /usr/cad/CBDK018_UMC_Faraday_v1.1/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db
+  fsa0m_a_generic_core_ss1p62v125c (library) /usr/cad/CBDK018_UMC_Faraday_v1.1/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/2019.03-sp1-1/libraries/syn/dw_foundation.sldb
+
+1
+#Setting Clock Constraints
+source -echo -verbose bitonic_sort_dc.sdc
+# CHIP Level Constraint
+set cycle  10.0        ;#clock period defined by designer
+10.0
+create_clock -period $cycle [get_ports  clk]
+1
+set_fix_hold                [get_clocks clk]
+1
+set_dont_touch_network      [get_clocks clk]
+1
+set_clock_uncertainty  0.1  [get_clocks clk]
+1
+set_clock_latency      0.5  [get_clocks clk]
+1
+set_ideal_network           [get_ports clk]
+1
+set_input_delay  -max 1   -clock clk [remove_from_collection [all_inputs] [get_ports clk]] 
+1
+set_input_delay  -min 0   -clock clk [remove_from_collection [all_inputs] [get_ports clk]] 
+1
+set_output_delay 1 -clock clk [all_outputs]
+1
+set_load         1                [all_outputs]
+1
+set_drive        0.1              [all_inputs]
+1
+set_operating_conditions -max_library fsa0m_a_generic_core_ss1p62v125c -max WCCOM
+Using operating conditions 'WCCOM' found in library 'fsa0m_a_generic_core_ss1p62v125c'.
+1
+set_wire_load_model -name G1000K -library fsa0m_a_generic_core_ss1p62v125c                    
+1
+1
+set high_fanout_net_threshold 0
+0
+set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
+1
+check_design
+1
+uniquify
+Information: Uniquified 2 instances of design 'bitonic_block_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'bitonic_block_DATA_WIDTH16_ORDER0_POLARITY1_SIGNED0_PIPE_REG1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'bitonic_node_DATA_WIDTH16_ORDER0_POLARITY1_SIGNED0_PIPE_REG1_INDEX1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX3'. (OPT-1056)
+Information: Uniquified 2 instances of design 'bitonic_node_DATA_WIDTH16_ORDER0_POLARITY1_SIGNED0_PIPE_REG1_INDEX3'. (OPT-1056)
+Information: Uniquified 2 instances of design 'bitonic_node_DATA_WIDTH16_ORDER1_POLARITY0_SIGNED0_PIPE_REG1_INDEX5'. (OPT-1056)
+Information: Uniquified 4 instances of design 'bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX6'. (OPT-1056)
+Information: Uniquified 18 instances of design 'CAS_16_0_0_00000001'. (OPT-1056)
+Information: Uniquified 6 instances of design 'CAS_16_1_0_00000001'. (OPT-1056)
+1
+#Synthesis all design
+# compile -map_effort high -area_effort high
+# compile -map_effort high -area_effort high -inc
+compile
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | P-2019.03-DWBB_201903.1 |     *     |
+| Licensed DW Building Blocks        | P-2019.03-DWBB_201903.1 |     *     |
+============================================================================
+
+
+Warning: Operating condition WCCOM set on design bitonic_sort has different process,
+voltage and temperatures parameters than the parameters at which target library 
+fsa0m_a_t33_generic_io_ff1p98vm40c is characterized. Delays may be inaccurate as a result. (OPT-998)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'CAS_16_0_0_00000001_0'
+  Processing 'bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX6_0'
+  Processing 'bitonic_node_DATA_WIDTH16_ORDER1_POLARITY0_SIGNED0_PIPE_REG1_INDEX5_0'
+  Processing 'bitonic_node_DATA_WIDTH16_ORDER2_POLARITY0_SIGNED0_PIPE_REG1_INDEX4'
+  Processing 'bitonic_block_DATA_WIDTH16_ORDER2_POLARITY0_SIGNED0_PIPE_REG1'
+  Processing 'CAS_16_1_0_00000001_0'
+  Processing 'bitonic_node_DATA_WIDTH16_ORDER0_POLARITY1_SIGNED0_PIPE_REG1_INDEX3_0'
+  Processing 'bitonic_node_DATA_WIDTH16_ORDER1_POLARITY1_SIGNED0_PIPE_REG1_INDEX2'
+  Processing 'bitonic_block_DATA_WIDTH16_ORDER1_POLARITY1_SIGNED0_PIPE_REG1'
+  Processing 'bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX3_0'
+  Processing 'bitonic_node_DATA_WIDTH16_ORDER1_POLARITY0_SIGNED0_PIPE_REG1_INDEX2'
+  Processing 'bitonic_block_DATA_WIDTH16_ORDER1_POLARITY0_SIGNED0_PIPE_REG1'
+  Processing 'bitonic_node_DATA_WIDTH16_ORDER0_POLARITY1_SIGNED0_PIPE_REG1_INDEX1_0'
+  Processing 'bitonic_block_DATA_WIDTH16_ORDER0_POLARITY1_SIGNED0_PIPE_REG1_0'
+  Processing 'bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX1_0'
+  Processing 'bitonic_block_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_0'
+  Processing 'bitonic_sort'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Mapping 'CAS_16_0_0_00000001_0_DW_cmp_0'
+  Mapping 'CAS_16_0_0_00000001_1_DW_cmp_0'
+  Mapping 'CAS_16_0_0_00000001_2_DW_cmp_0'
+  Mapping 'CAS_16_0_0_00000001_3_DW_cmp_0'
+  Mapping 'CAS_16_0_0_00000001_4_DW_cmp_0'
+  Mapping 'CAS_16_0_0_00000001_5_DW_cmp_0'
+  Mapping 'CAS_16_0_0_00000001_6_DW_cmp_0'
+  Mapping 'CAS_16_0_0_00000001_7_DW_cmp_0'
+  Mapping 'CAS_16_0_0_00000001_8_DW_cmp_0'
+  Mapping 'CAS_16_0_0_00000001_9_DW_cmp_0'
+  Mapping 'CAS_16_0_0_00000001_10_DW_cmp_0'
+  Mapping 'CAS_16_0_0_00000001_11_DW_cmp_0'
+  Mapping 'CAS_16_1_0_00000001_0_DW_cmp_0'
+  Mapping 'CAS_16_1_0_00000001_1_DW_cmp_0'
+  Mapping 'CAS_16_1_0_00000001_2_DW_cmp_0'
+  Mapping 'CAS_16_1_0_00000001_3_DW_cmp_0'
+  Mapping 'CAS_16_0_0_00000001_12_DW_cmp_0'
+  Mapping 'CAS_16_0_0_00000001_13_DW_cmp_0'
+  Mapping 'CAS_16_0_0_00000001_14_DW_cmp_0'
+  Mapping 'CAS_16_0_0_00000001_15_DW_cmp_0'
+  Mapping 'CAS_16_1_0_00000001_4_DW_cmp_0'
+  Mapping 'CAS_16_0_0_00000001_16_DW_cmp_0'
+  Mapping 'CAS_16_1_0_00000001_5_DW_cmp_0'
+  Mapping 'CAS_16_0_0_00000001_17_DW_cmp_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'CAS_16_0_0_00000001_0'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_0_0_00000001_1'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_0_0_00000001_2'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_0_0_00000001_3'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_0_0_00000001_4'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_0_0_00000001_5'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_0_0_00000001_6'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_0_0_00000001_7'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_0_0_00000001_8'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_0_0_00000001_9'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_0_0_00000001_10'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_0_0_00000001_11'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_1_0_00000001_0'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_1_0_00000001_1'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_1_0_00000001_2'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_1_0_00000001_3'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_0_0_00000001_12'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_0_0_00000001_13'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_0_0_00000001_14'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_0_0_00000001_15'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_1_0_00000001_4'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_0_0_00000001_16'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_1_0_00000001_5'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'CAS_16_0_0_00000001_17'. (DDB-72)
+Loading db file '/usr/cad/CBDK018_UMC_Faraday_v1.1/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db'
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:03  115567.6      0.00       0.0      69.9                                0.00  
+    0:00:03  115567.6      0.00       0.0      69.9                                0.00  
+    0:00:03  115567.6      0.00       0.0      69.9                                0.00  
+    0:00:03  115567.6      0.00       0.0      69.9                                0.00  
+    0:00:03  115567.6      0.00       0.0      69.9                                0.00  
+    0:00:03   78445.0      0.00       0.0      69.9                                0.00  
+    0:00:03   78445.0      0.00       0.0      69.9                                0.00  
+    0:00:03   78445.0      0.00       0.0      69.9                                0.00  
+    0:00:03   78445.0      0.00       0.0      69.9                                0.00  
+    0:00:03   78445.0      0.00       0.0      69.9                                0.00  
+    0:00:04   79644.9      0.00       0.0       0.0                                0.00  
+    0:00:04   79644.9      0.00       0.0       0.0                                0.00  
+    0:00:04   79644.9      0.00       0.0       0.0                                0.00  
+    0:00:04   79644.9      0.00       0.0       0.0                                0.00  
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:04   79644.9      0.00       0.0       0.0                                0.00  
+    0:00:04   79644.9      0.00       0.0       0.0                                0.00  
+    0:00:04   79644.9      0.00       0.0       0.0                                0.00  
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:04   79644.9      0.00       0.0       0.0                                0.00  
+    0:00:04   79644.9      0.00       0.0       0.0                                0.00  
+    0:00:04   78276.2      0.00       0.0       0.0                                0.00  
+    0:00:04   78013.8      0.00       0.0       0.0                                0.00  
+    0:00:04   77826.3      0.00       0.0       0.0                                0.00  
+    0:00:04   77732.5      0.00       0.0       0.0                                0.00  
+    0:00:04   77582.5      0.00       0.0       0.0                                0.00  
+    0:00:04   77582.5      0.00       0.0       0.0                                0.00  
+    0:00:04   77582.5      0.00       0.0       0.0                                0.00  
+    0:00:04   77582.5      0.00       0.0       0.0                                0.00  
+    0:00:04   77582.5      0.00       0.0       0.0                                0.00  
+    0:00:04   77582.5      0.00       0.0       0.0                                0.00  
+    0:00:04   77582.5      0.00       0.0       0.0                                0.00  
+    0:00:04   77582.5      0.00       0.0       0.0                                0.00  
+    0:00:04   77582.5      0.00       0.0       0.0                                0.00  
+Loading db file '/usr/cad/CBDK018_UMC_Faraday_v1.1/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ff1p98vm40c.db'
+Loading db file '/usr/cad/CBDK018_UMC_Faraday_v1.1/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db'
+Loading db file '/usr/cad/CBDK018_UMC_Faraday_v1.1/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+write -format ddc     -hierarchy -output "bitonic_sort_syn.ddc"
+Writing ddc file 'bitonic_sort_syn.ddc'.
+1
+write_file -format verilog -hierarchy -output bitonic_sort_syn.v
+Writing verilog file '/home/lab716/Desktop/Z/bitonic_sort_syn.v'.
+1
+write_sdf -version 2.1 bitonic_sort_syn.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/lab716/Desktop/Z/bitonic_sort_syn.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+write_sdc -version 2.1 bitonic_sort_syn.sdc
+1
+report_area > area.log
+report_power > power.log
+report_timing -sign 4 > timing.log
+report_timing -sign 4 -delay_type min > hold.log
+report_timing -delay_type min > timing_hold.log
+exit
+
+Thank you...

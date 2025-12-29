@@ -1,0 +1,59 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : bitonic_sort
+Version: P-2019.03-SP1-1
+Date   : Mon Dec 29 09:54:07 2025
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: data_in[0] (input port clocked by clk)
+  Endpoint: SORT_STAGE[0].BLOCK[0].bitonic_block_inst/BLOCK_STAGE[0].NODE[0].bitonic_node_inst/COMP[0].comp_inst/H_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bitonic_sort       G1000K                fsa0m_a_generic_core_ss1p62v125c
+  CAS_16_0_0_00000001_17
+                     enG5K                 fsa0m_a_t33_generic_io_ff1p98vm40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.5000     0.5000
+  input external delay                                  0.0000     0.5000 f
+  data_in[0] (in)                                       0.0027     0.5027 f
+  SORT_STAGE[0].BLOCK[0].bitonic_block_inst/data_in[0] (bitonic_block_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_1)
+                                                        0.0000     0.5027 f
+  SORT_STAGE[0].BLOCK[0].bitonic_block_inst/BLOCK_STAGE[0].NODE[0].bitonic_node_inst/data_in[0] (bitonic_node_DATA_WIDTH16_ORDER0_POLARITY0_SIGNED0_PIPE_REG1_INDEX1_1)
+                                                        0.0000     0.5027 f
+  SORT_STAGE[0].BLOCK[0].bitonic_block_inst/BLOCK_STAGE[0].NODE[0].bitonic_node_inst/COMP[0].comp_inst/A[0] (CAS_16_0_0_00000001_17)
+                                                        0.0000     0.5027 f
+  SORT_STAGE[0].BLOCK[0].bitonic_block_inst/BLOCK_STAGE[0].NODE[0].bitonic_node_inst/COMP[0].comp_inst/U15/O (MOAI1S)
+                                                        0.1475     0.6501 f
+  SORT_STAGE[0].BLOCK[0].bitonic_block_inst/BLOCK_STAGE[0].NODE[0].bitonic_node_inst/COMP[0].comp_inst/H_reg[0]/D (QDFFN)
+                                                        0.0000     0.6501 f
+  data arrival time                                                0.6501
+
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.5000     0.5000
+  clock uncertainty                                     0.1000     0.6000
+  SORT_STAGE[0].BLOCK[0].bitonic_block_inst/BLOCK_STAGE[0].NODE[0].bitonic_node_inst/COMP[0].comp_inst/H_reg[0]/CK (QDFFN)
+                                                        0.0000     0.6000 r
+  library hold time                                    -0.0137     0.5863
+  data required time                                               0.5863
+  --------------------------------------------------------------------------
+  data required time                                               0.5863
+  data arrival time                                               -0.6501
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0638
+
+
+1
